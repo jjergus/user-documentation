@@ -10,7 +10,7 @@ $m = Map {
   'purple' => '#663399',
 };
 
-$array = $m->toArray();
+$array = $m->toDArray();
 
 var_dump(is_array($array));
 var_dump($array);
