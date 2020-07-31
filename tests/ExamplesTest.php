@@ -177,12 +177,12 @@ class ExamplesTest extends \Facebook\HackTest\HackTest {
       'hhvm.hack_arr_compat_notices=1',
       '-d',
       'hhvm.hack_arr_compat_implcit_varray_append=1',
-      '-d',
-      'auto_prepend_file='.
-        LocalConfig::ROOT.'/src/utils/_private/__init_autoload.php',
       self::TEST_RUNNER,
       '-m',
       'interp',
+      '--args',
+      '-d auto_prepend_file='.
+        LocalConfig::ROOT.'/src/utils/_private/__init_autoload.php',
     };
     $command->addAll($extra_args);
     $command[] = LocalConfig::ROOT.'/guides';
