@@ -2,8 +2,6 @@
 
 namespace Hack\UserDocumentation\AsyncOps\Extensions\Examples\MySQL;
 
-require __DIR__.'/async_mysql_connect.inc.php';
-
 use \Hack\UserDocumentation\AsyncOps\Extensions\Examples\AsyncMysql\ConnectionInfo as CI
 ;
 
@@ -64,5 +62,6 @@ async function async_mysql_tutorial(): Awaitable<void> {
 
 <<__EntryPoint>>
 function main(): void {
+  require __DIR__.'/async_mysql_connect.inc.php';
   \HH\Asio\join(async_mysql_tutorial());
 }

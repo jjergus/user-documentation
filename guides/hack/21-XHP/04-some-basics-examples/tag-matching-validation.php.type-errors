@@ -20,4 +20,7 @@ function intro_examples_tag_matching_validation_run(): void {
   intro_examples_tag_matching_validation_using_xhp();
 }
 
-intro_examples_tag_matching_validation_run();
+<<__EntryPoint>>
+function tag_matching_validation_php_type_errors_main(): void {
+  intro_examples_tag_matching_validation_run();
+}

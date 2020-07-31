@@ -2,7 +2,10 @@
 
 namespace Hack\UserDocumentation\Types\Generics\Examples\UseStack;
 
-require_once('Stack.inc.php');
+<<__EntryPoint>>
+function Stack_test_main(): void {
+  require_once('Stack.inc.php');
+}
 
 function use_int_stack(
   \Hack\UserDocumentation\Types\Generics\Examples\Stk\Stack<int> $stInt,
