@@ -1,12 +1,12 @@
 <?hh // strict
 
-namespace Hack\UserDocumentation\AsyncOps\AsyncVsAwaitables\Examples\Impl;
+namespace Hack\UserDocumentation\AsyncOps\AsyncVsAwaitables\Examples\NonAsyncImpl;
 
-<<__EntryPoint>>
-function non_async_impl_main(): void {
-  require_once "interface.inc.php";
+interface Car {
+  public function drive(): Awaitable<void>;
 }
 
+// @example-start
 class VolkswagenDiesel implements Car {
   public function drive(): Awaitable<void> {
     // ...
