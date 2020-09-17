@@ -74,7 +74,7 @@ final class ExamplesIncludeBlock implements UnparsedBlocks\BlockProducer {
     );
   }
 
-  private static function getExampleBlock(string $file): UnparsedBlocks\Block {
+  public static function getExampleBlock(string $file): UnparsedBlocks\Block {
     $code = \file_get_contents($file);
 
     $start_pos = Str\search($code, self::START_MARKER);
